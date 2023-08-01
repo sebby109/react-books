@@ -1,0 +1,18 @@
+
+
+#hsDiv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("../Images/different-colours-books.jpg");
+}
+
+#mainForm {
+    width: 500px;
+}
+
+#hsImg {
+    width: 100px;
+    height: 100px;
+}
