@@ -5,14 +5,30 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background-image: url("../Images/different-colours-books.jpg");
+}
+
+#hsBt {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    border-color: blueviolet;
+}
+
+#imgRef {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-50%);
 }
 
 #mainForm {
     width: 500px;
+    border-color: red;
 }
 
 #hsImg {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 300px;
+    
 }
