@@ -1,17 +1,30 @@
-
+#hsMain {
+    background-image: url("https://img.freepik.com/premium-photo/stack-books-mug-cozy-reading-with-warm-drink_564702-31.jpg?w=826");
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 #hsDiv {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    width: 30em;
+    height: 10em;
 }
 
 #hsBt {
     position: absolute;
     left: 50%;
     top: 20%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-color: blueviolet;
 }
 
@@ -19,7 +32,7 @@
     position: absolute;
     left: 50%;
     top: 100%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 #mainForm {
@@ -30,5 +43,5 @@
 #hsImg {
     width: 500px;
     height: 300px;
-    
+
 }
