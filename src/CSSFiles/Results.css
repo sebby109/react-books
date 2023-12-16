@@ -5,11 +5,19 @@
 }
 
 #img {
-    width: 200px;
-    height: 220px;
+    width: 100px;
+    height: 120px;
 }
 
 #text {
     font-size: 20px;
     padding-left: 20px;
+}
+
+#parentDiv {
+    padding-top: 100px;
+}
+
+#myRow {
+    margin: 20px;
 }
