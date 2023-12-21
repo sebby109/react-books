@@ -12,6 +12,10 @@ function HomeScreen() {
       <div id="hsDiv">
         <SearchBar />
       </div >
+      <div id="credits"><a href='https://www.freepik.com/premium-photo/stack-books-mug-cozy-reading-with-warm-drink_21273917.htm#page=7&query=books%20and%20tea&position=23&from_view=search&track=ais&uuid=e09ce514-0d59-4c1b-bcce-34c06306ca9c'>
+        Background image credit
+      </a>
+      </div>
     </div>
   );
 }

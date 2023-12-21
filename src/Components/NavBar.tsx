@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
       <Container fluid>
-        <Navbar.Brand href="#">Books</Navbar.Brand>
+        <Navbar.Brand href="/">Books</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,9 +16,8 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Cateorgies</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+            <Nav.Link href="/">Home</Nav.Link>
+            <NavDropdown title="Categories" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action

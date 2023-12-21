@@ -1,10 +1,17 @@
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import '../CSSFiles/Results.css';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 
 function Rows(props: any) {
     const books: any[] = props.bArr;
+    const navigate = useNavigate();
+
+    const handleClick = (id: string) => (event: any) => {
+        navigate("/book/" + id);
+    };
+
     // left off here.
     return (
         <Container>
@@ -13,9 +20,11 @@ function Rows(props: any) {
                     <div id="imgContainer">
                         <Image id="img" src={cur_book.cover} rounded />
                         <div id="text">
-                            {cur_book.book_id}
+                            {cur_book.name}
                             <br />
-                            rating and stock status go here
+                            Users rated this: {cur_book.rating} / 5
+                            <br />
+                            <Button onClick={handleClick(cur_book.book_id)}> More info </Button>
                         </div>
                     </div>
                     <hr />
