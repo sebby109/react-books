@@ -1,27 +1,25 @@
 #hsMain {
-    background-image: url("https://img.freepik.com/premium-photo/stack-books-mug-cozy-reading-with-warm-drink_564702-31.jpg?w=826");
-    background-repeat: no-repeat;
-    background-size: contain, cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    min-height: 100%;
 }
 
 #hsDiv {
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%, -50%);
-    width: 30em;
-    height: 10em;
+    width: 30%;
+    height: 30%;
 }
 
 #hsBt {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
@@ -29,7 +27,7 @@
 }
 
 #imgRef {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 100%;
     transform: translate(-50%, -50%);
@@ -47,9 +45,40 @@
 }
 
 #credits {
-    position: fixed;
     left: 50%;
     bottom: 0%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
+    overflow: hidden;
+}
+
+#cImg {
+    width: 100%;
+}
+
+.carousel {
+    overflow: hidden;
+    top: 40%;
+    bottom: 0%;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-item {
+    overflow: hidden;
+}
+
+.carousel .glyphicon-chevron-right {
+    display: none;
+}
+
+#about {
+    float: left;
+    position: relative;
+}
+
+#welcome {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    font-family: Lucida Handwriting;
+    font-size: 50px;
 }

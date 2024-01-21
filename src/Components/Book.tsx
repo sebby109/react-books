@@ -25,7 +25,7 @@ function Book() {
             <Container fluid id="resultContainer">
                 {spin ? (<Spinner animation="border" />)
                     : (
-                        <>
+                        <div className="bCenter">
                             <Image id="imgB" src={bData.cover} />
                             <ul id="ulB">
                                 <li>Author: {bData.authors}</li>
@@ -34,7 +34,7 @@ function Book() {
                                 <li><a href={bData.url}>Purchase here</a></li>
                             </ul>
                             <p>{bData.synopsis}</p>
-                        </>
+                        </div>
                     )
                 }
             </Container>

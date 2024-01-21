@@ -1,6 +1,4 @@
 
-// for now set up for title search only. 
-// will update to do different types once completed
 const url = 'https://hapi-books.p.rapidapi.com';
 const options = {
     method: 'GET',

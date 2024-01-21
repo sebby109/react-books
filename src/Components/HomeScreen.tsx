@@ -3,6 +3,8 @@ import '../Images/colours-books.jpg';
 import '../Images/long-row-colorful-books.jpg';
 import NavBar from './NavBar';
 import SearchBar from './SearchBar';
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
 
 function HomeScreen() {
 
@@ -10,13 +12,23 @@ function HomeScreen() {
     <div id="hsMain">
       <NavBar />
       <div id="hsDiv">
+        <h6 id="welcome">Find your books</h6>
         <SearchBar />
+        <Carousel fade indicators={false} controls={false}>
+          <Carousel.Item>
+            <Image id="cImg" src='https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image id="cImg" src='https://images.pexels.com/photos/2099266/pexels-photo-2099266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image id="cImg" src='https://images.pexels.com/photos/1516983/pexels-photo-1516983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
+          </Carousel.Item>
+        </Carousel>
       </div >
-      <div id="credits"><a href='https://www.freepik.com/premium-photo/stack-books-mug-cozy-reading-with-warm-drink_21273917.htm#page=7&query=books%20and%20tea&position=23&from_view=search&track=ais&uuid=e09ce514-0d59-4c1b-bcce-34c06306ca9c'>
-        Background image credit
-      </a>
-      </div>
-    </div>
+
+
+    </div >
   );
 }
 

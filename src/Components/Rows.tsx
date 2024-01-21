@@ -14,7 +14,7 @@ function Rows(props: any) {
 
     // left off here.
     return (
-        <Container>
+        <Container id="rContainer">
             {books.map(cur_book =>
                 <Row id="myRow">
                     <div id="imgContainer">
@@ -24,7 +24,7 @@ function Rows(props: any) {
                             <br />
                             Users rated this: {cur_book.rating} / 5
                             <br />
-                            <Button onClick={handleClick(cur_book.book_id)}> More info </Button>
+                            <Button variant='secondary' onClick={handleClick(cur_book.book_id)}> More info </Button>
                         </div>
                     </div>
                     <hr />
