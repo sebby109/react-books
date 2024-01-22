@@ -39,7 +39,7 @@ function SearchBar() {
                     type="text"
                     id="mySearch"
                 />
-                <Button variant="danger" id="sbBt" type='submit'>Submit</Button>{' '}
+                <Button variant="secondary" id="sbBt" type='submit'>Submit</Button>{' '}
             </Form>
         </>
     );

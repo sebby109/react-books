@@ -14,15 +14,15 @@ function Results() {
     const [spin, setSpin] = useState(true);
 
     useEffect(() => {
-        console.log(book);
         getData(book).then(x => setbData(x)).then(z => setSpin(false)).catch(e => console.log(e));
         //empty array allows useEffect to only run on the first render.
+        // this avoids un needed api calls.
     }, []);
 
     return (
         <>
+            <NavBar />
             <div id="resDiv">
-                <NavBar />
                 <div id="parentDiv">
                     <Container fluid id="resultContainer">
                         {spin ? (<Spinner animation="border" id="spin" />)

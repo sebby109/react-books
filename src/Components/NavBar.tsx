@@ -14,7 +14,7 @@ add these once features added
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" fixed="top" bg="secondary" id="navB">
+    <Navbar expand="lg" className="bg-body-tertiary" fixed="top" bg="secondary">
       <Container fluid>
         <Navbar.Brand href="/">Books</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
