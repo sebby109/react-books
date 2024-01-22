@@ -4,6 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../CSSFiles/myNav.css'
 
+/*
+add these once features added
+            <Nav.Link href="#">Profile</Nav.Link>
+            <Nav.Link href="#" disabled>
+              Sign out
+            </Nav.Link>
+*/
+
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" fixed="top" bg="secondary" id="navB">
@@ -17,10 +25,6 @@ function NavBar() {
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#">Profile</Nav.Link>
-            <Nav.Link href="#" disabled>
-              Sign out
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -14,16 +14,15 @@ function Book() {
     const [spin, setSpin] = useState(true);
 
     useEffect(() => {
-        console.log(id)
         getBook(id).then(x => setbData(x)).then(z => setSpin(false)).catch(e => console.log(e));
         //empty array allows useEffect to only run on the first render.
     }, []);
 
     return (
-        <>
+        <div>
             <NavBar />
             <Container fluid id="resultContainer">
-                {spin ? (<Spinner animation="border" />)
+                {spin ? (<Spinner animation="border" id="spin" />)
                     : (
                         <div className="bCenter">
                             <Image id="imgB" src={bData.cover} />
@@ -33,12 +32,12 @@ function Book() {
                                 <li>Rating: {bData.rating} / 5</li>
                                 <li><a href={bData.url}>Purchase here</a></li>
                             </ul>
-                            <p>{bData.synopsis}</p>
+                            <p id="bSyn">{bData.synopsis}</p>
                         </div>
                     )
                 }
             </Container>
-        </>
+        </div>
     );
 }
 export default Book;

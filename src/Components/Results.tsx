@@ -31,11 +31,6 @@ function Results() {
                     </Container>
                 </div>
             </div>
-            <div id="credits">
-                <a href="https://www.freepik.com/free-photo/beautiful-arrangement-different-books_12892753.htm#query=books&position=34&from_view=search&track=sph&uuid=7bfbb436-7fac-46bf-830a-b8b580de80b5">
-                    Image by Freepik
-                </a>
-            </div>
         </>
     );
 }

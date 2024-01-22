@@ -14,10 +14,12 @@ function SearchBar() {
         // input has type HTMLInputElement or null here
 
         if (input != null) {
-            let inputStr: string = input.value;
+            //cleans string and makes sure no special characters are entered
+            // to avoid sql injections
+            let inputStr: string = input.value.replace(/[^a-zA-Z ]/g, "");
+
             if (inputStr == "") {
-                //if lets to empty string "" page does not responde to navigate.
-                navigate("/Results/" + "ok");
+                alert("Must enter a value")
             }
             else {
                 navigate("/Results/" + inputStr);
