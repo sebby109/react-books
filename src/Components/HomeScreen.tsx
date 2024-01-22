@@ -19,10 +19,10 @@ function HomeScreen() {
             <Image id="cImg" src='https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
           </Carousel.Item>
           <Carousel.Item>
-            <Image id="cImg" src='https://images.pexels.com/photos/2099266/pexels-photo-2099266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
+            <Image id="cImg" src='https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
           </Carousel.Item>
           <Carousel.Item>
-            <Image id="cImg" src='https://images.pexels.com/photos/1516983/pexels-photo-1516983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
+            <Image id="cImg" src='https://images.pexels.com/photos/1831744/pexels-photo-1831744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
           </Carousel.Item>
         </Carousel>
       </div >
